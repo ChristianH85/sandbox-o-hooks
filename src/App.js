@@ -1,10 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Nav from './components/navigation/Nav';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import UseState from './hooks/UseState';
+import UseEffect from './hooks/UseEffect';
+import UseRef from './hooks/UseRef';
+import UseMemo from './hooks/UseMemo';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      
+      <Router>
+      <Nav/>
+        <Switch>
+          <Route exact path="/" component={UseState}/>
+          <Route exact path="/effect" component={UseEffect}/>
+          <Route exact path="/ref" component={UseRef}/>
+          <Route exact path="/memo" component={UseMemo}/>
+        </Switch>
+      </Router>      
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +31,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
