@@ -11,7 +11,7 @@ const UseRef = () => {
   };
 
   return (
-    <div>
+    <div className='content'>
       <br/>
       <input ref={inputEl} />
       <button onClick={onClick}>{count}</button>

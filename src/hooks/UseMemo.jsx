@@ -9,7 +9,7 @@ function UseMemo() {
   }, [count, name]);
 
   return (
-    <div>
+    <div className='content'>
       <p>
         <button onClick={()=> setCount(count + 1)}>Click</button>
       </p>

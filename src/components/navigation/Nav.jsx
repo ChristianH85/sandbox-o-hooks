@@ -9,7 +9,7 @@ const Nav = () => {
     };
     
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg" id ='navB'>
         <div className="navbar-brand" >
         <Link to='/' className='nav-link'>  Sandbox Full O' Hooks</Link>
         </div>
@@ -23,10 +23,12 @@ const Nav = () => {
             aria-label="Toggle navigation"
             onClick={toggle}
         >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon" id='icon'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+</svg></span>
         </button>
         <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
-            <ul className="navbar-nav">
+            <ul className="navbar-nav" >
             <li className="nav-item ">
                 <Link to='/' className='nav-link'> useState( )</Link>
             </li>
@@ -38,6 +40,9 @@ const Nav = () => {
             </li>
             <li className="nav-item">
             <Link to='/memo' className='nav-link'> useMemo ( )</Link>
+            </li>
+            <li className="nav-item">
+            <Link to='/props' className='nav-link'> Props</Link>
             </li>
             </ul>
         </div>

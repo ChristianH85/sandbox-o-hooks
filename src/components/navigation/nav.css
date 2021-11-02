@@ -1,0 +1,19 @@
+#navB{
+    width:100vw;
+    height:15vh;
+    position:fixed;
+    top :0;
+    background-color: #bdbcbc;
+    font-size: 1.5em;
+}
+.navbar-toggler{
+    
+}
+#icon{
+    /* background-color: #b92f2f; */
+    color: #fff!important;
+    font-size: 1.5em;
+}
+.nav-item{
+    background-color: #bdbcbc!important;
+}

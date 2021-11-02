@@ -5,6 +5,7 @@ import UseState from './hooks/UseState';
 import UseEffect from './hooks/UseEffect';
 import UseRef from './hooks/UseRef';
 import UseMemo from './hooks/UseMemo';
+import Parent from './components/props/Parent';
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/effect" component={UseEffect}/>
           <Route exact path="/ref" component={UseRef}/>
           <Route exact path="/memo" component={UseMemo}/>
+          <Route exact path="/props" component={Parent}/>
         </Switch>
       </Router>      
       {/* <header className="App-header">

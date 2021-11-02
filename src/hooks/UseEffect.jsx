@@ -16,7 +16,7 @@ const UseEffect = () => {
         
     },[count]);
     return (
-        <div>
+        <div className='content'>
             <h3>Open console to see Effect</h3>
             <input type="text" value={name} onChange={e => setName(e.target.value)} />
             <button onClick={() => setCount(count + 1)}>
@@ -50,7 +50,7 @@ useEffect(() => {
         <code className='code-block usage'>
             {`
 useEffect(() => {
-    console.log('useEffect');
+    console.log('useEffect w/ []');
     setECount(eCount+1);
         },[]);
             `}

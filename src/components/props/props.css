@@ -1,0 +1,17 @@
+.parent{
+    background-color: #1f0d8a;
+    color: #fff;
+    padding: 1em;
+}
+.child1{
+    background-color: #f0f0f0;
+    color: #000;
+    margin-top: 1em;
+    padding:.5em;
+}
+.child2{
+    background-color: #000;
+    color: #f0f0f0;
+    margin-top: 1em;
+    padding:.5em;
+}
